@@ -97,16 +97,16 @@ void Student::printHeader(){
 void Student::print()
 {
     //using tab to separate output
-    cout << this -> getID() << '\t';
-    cout << this -> getFirstName() << '\t';
-    cout << this -> getLastName() << '\t';
-    cout << this -> getEmail() << '\t';
-    cout << this -> getAge() << '\t';
+    cout<< this -> getID() << '\t';
+    cout <<"First Name: "<< this -> getFirstName() << '\t';
+    cout << "Last Name: "<<this -> getLastName() << '\t';
+    cout << "Email: "<<this -> getEmail() << '\t';
+    cout << "Age: "<<this -> getAge() << '\t';
     //no tab, because in the same block, separated by comma
-    cout << this -> getDays()[0] << ", ";
+    cout << "Days in Course: "<<this -> getDays()[0] << ", ";
     cout << this -> getDays() [1]<< ", ";
     cout << this -> getDays()[2] << '\t';
     //change enum to string
-    cout << degreeProgramStrings[this -> getDegree()] << endl;
+    cout << "Degree: "<< degreeProgramStrings[this -> getDegree()] << endl;
     
 };
